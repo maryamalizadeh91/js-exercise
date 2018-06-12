@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Personal Info</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label>First Name</label>
+                <input type="text" name="firstname" id="firstname" value="Maryam" class="form-control">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label>Last Name</label>
+                <input type="text" name="lastname" id="lastname" value="M.Alizadeh" class="form-control">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label>Job</label>
+                <input type="text" name="job" id="job" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <label>Bio</label>
+                <textarea class="form-control" name="bio" id="bio" rows="8" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Email</label>
+                <input type="email" name="email" id="email" value="maryamalizadeh91@gmail.com" class="form-control">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Phone</label>
+                <input type="number" name="phone" id="phone" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <label>Skills</label>
+                <textarea name="skills" id="skills" cols="30" rows="8" class="form-control">HTML,CSS,PHP,JS</textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <button class="form-control btn-primary" onclick="sendInfo()" id="Submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+            <h2 id="pInfo"></h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h4 id="hFirstName"></h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h4 id="hLastName"></h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h4 id="hJob"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12" id="divFirstName">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12" id="divLastName">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12" id="divJob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h4 id="hBio"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="divBio">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h4 id="hEmail"></h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h4 id="hPhone"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="divEmail">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" id="divPhone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h4 id="hSkills"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="divSkills">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
